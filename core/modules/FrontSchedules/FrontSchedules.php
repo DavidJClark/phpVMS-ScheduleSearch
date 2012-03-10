@@ -50,7 +50,7 @@ class FrontSchedules extends CodonModule
                     }
                 if($aircraft == !'')
                 {
-                    $aircrafts = FrontSchedulesData::findaircraft($aircraft);//print_r($aircrafts);
+                    $aircrafts = FrontSchedulesData::findaircraft($aircraft);
                     foreach($aircrafts as $aircraft)
                     {
                         $route = FrontSchedulesData::findschedules($arricao, $depicao, $airline, $aircraft->id);
